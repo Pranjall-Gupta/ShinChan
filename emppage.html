@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Dashboard</title>
+    <link rel="icon" href="images/icons8-company-16.png">
+    <style>
+        body{
+            margin: 0px;
+            background-color:rgb(186, 218, 226);
+        }
+
+        header,footer{
+            background-color:rgba(41, 49, 57, 0.37) ;
+            color:rgb(0, 0, 0) ;
+            padding: 2px;
+            margin: 0px;
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .navitem{
+            display: inline;
+            padding: 15px;
+        }
+        .navitem a{
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+        .registerform {
+            width: max-content;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+        .employeetable{
+            text-align: center;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        th,td{
+            border: 1px solid rgba(41, 49, 57, 0.37);
+            border-collapse: collapse;
+            padding: 8px;
+        }
+        .contactus{
+            text-align: center;
+        }
+    </style>
+    <!--text decoration changes the links from underlined to normal-->
+</head>
+<body>
+    <header>
+        <h1>Welcome To The Company HR!</h1>
+        <nav>
+            <ul>
+                <li class="navitem"><a href="#employee-registration">Employee Registration</a></li>
+                <li class="navitem"><a href="#employee-directory">Employee Directory</a></li>
+                <li class="navitem"><a href="#contact-us">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+<!-- used inline for navitem for all the links to be in same line-->
+    <img src="images/company.jpeg" style="width: 100%; height: 400px;">
+
+    <section id="employee-registration" class="registerform">
+        <h1>Employee Registration</h1>
+        <p>Fill the below form to register as <em>employee.</em></p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email"><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password">
+            <br><br>
+            <label for="age">Age:</label>
+            <input type="number" id="age">
+            <br><br>
+            <label for="role">Select role:</label>
+            <select id="role">
+                <option>Software Engineer</option>
+                <option>Developer</option>
+                <option>Product Manager</option>
+                <option>Intern</option>
+            </select>
+            <br><br>
+            <label for="joindate">Select Joining Date:</label>
+            <input type="date" id="joindate">
+            <br><br>
+            <input type="submit">
+        </form>
+    </section>
+    <br>
+    <section id="employee-directory" class="employeetable">
+        <h1>Employee Directory</h1>
+        <table>
+            <tr>
+                <th>Employee Id</th>
+                <th>Employee Name</th>
+                <th>Employee Role</th>
+            </tr>
+            <tr>
+                <td>212</td>
+                <td>Pranjal Gupta</td>
+                <td>Software Engineer</td>
+            </tr>
+            <tr>
+                <td>213</td>
+                <td>Tannu Gupta</td>
+                <td>Developer</td>
+            </tr>
+            <tr>
+                <td>214</td>
+                <td>Taniya Gupta</td>
+                <td>Project Manager</td>
+            </tr>
+        </table>
+    </section>
+    <section id="contact-us" class="contactus">
+        <h2>Contact Us</h2>
+        <p>Visit us at <a href="company@email.com">company@email.com</a> for more details<br><br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7866072.6848936!2d71.25407194685376!3d15.705802770981235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1376eba4818f%3A0xbb1c9d2e87e3d14e!2sMicrosoft%20Corporation%20(India)%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1758165978830!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br><br>You can also ring us between 9am - 6pm for any queries<br><br>+91 786397981</p>
+    </section>
+    <footer>
+        <p>&copy;Company.en</p>
+    </footer>
+</body>
+</html>
